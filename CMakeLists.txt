@@ -17,3 +17,7 @@ target_compile_options(ComparisonsTest PRIVATE
     $<$<CXX_COMPILER_ID:MSVC>:/Wall>
     $<$<CXX_COMPILER_ID:GNU,Clang,AppleClang>:-Wall>
 )
+
+# testing
+include(CTest)
+add_subdirectory(testsuite)
